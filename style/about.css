@@ -1,0 +1,43 @@
+.about-image,
+.about-description {
+    margin: 0 1rem;
+}
+
+.about-container {
+    background: url('../image/about-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    height: 150px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.about-logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+}
+.about-description {
+    margin-bottom: 3rem;
+}
+
+.about-description p {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+.about-description span {
+    font-size: 1.1rem;
+    color: rgba(58, 150, 145, 0.901);
+    font-weight: 500;
+}

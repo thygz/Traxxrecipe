@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/utilities.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/search-result.css" />
+        <link rel="stylesheet" href="./style/footer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="./script/search-result.js" type="module" defer></script>
+        <title>Search Result</title>
+    </head>
+    <body>
+        <header>
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li id="home">
+                            <a href="./index.html" class="link">Home</a>
+                        </li>
+                        <li id="category">
+                            <a href="./category.html" class="link">Category</a>
+                        </li>
+                        <li id="country">
+                            <a href="./country.html" class="link">Cuisine</a>
+                        </li>
+                        <li id="about">
+                            <a href="./about.html" class="link">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="list-icon">
+                        <a href="./favorite.html" class="favorite-icon">
+                            <i class="fa-regular fa-heart">
+                                <div
+                                    class="header-favorite-quantity js-header-favorite-quantity"
+                                ></div>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-input">
+            <div class="container search-input-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    placeholder="Search recipe for your ingredients"
+                    class="search-result-input"
+                />
+            </div>
+        </div>
+        <div class="search-result">
+            <div class="container search-result-container">
+                <div
+                    class="search-result-description js-search-result-description"
+                ></div>
+                <div
+                    class="search-result-recipe-content js-search-result-recipe-content"
+                ></div>
+            </div>
+        </div>
+        <div class="recommended-search">
+            <div class="container recommended-search-container">
+                <div
+                    class="recommended-search-title js-recommended-search-title"
+                ></div>
+                <div
+                    class="recommended-search-content js-recommended-search-content"
+                ></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-up details-btn-scroll-up-icon"></i>
+        <div id="search-overlay">
+            <div class="search-ingredients-container">
+                <div class="search-ingredients">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        placeholder="Search recipes for your ingredients"
+                        class="search-ingredients-input"
+                    />
+                </div>
+                <p>
+                    <span>Be specific in your search.</span> Example: pepper,
+                    vinegar, butter
+                </p>
+            </div>
+            <i class="fa-solid fa-xmark js-close-search-overlay"></i>
+        </div>
+        <div id="nav-overlay">
+            <div class="nav-overlay-list">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <ul>
+                    <li id="home">
+                        <a href="./index.html" class="link">Home</a>
+                    </li>
+                    <li id="category">
+                        <a href="./category.html" class="link">Category</a>
+                    </li>
+                    <li id="country">
+                        <a href="./country.html" class="link">Cuisine</a>
+                    </li>
+                    <li id="about">
+                        <a href="./about.html" class="link">About Us</a>
+                    </li>
+                </ul>
+                <button class="nav-overlay-search">search</button>
+                <div class="nav-overlay-social-media-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-tumblr"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-xmark close-nav-overlay js-close-nav-overlay"
+            ></i>
+        </div>
+        <div id="saved-overlay">
+            <div class="saved-overlay-content">
+                <i class="fa-solid fa-check check-saved-overlay"></i>
+                <p>saved!</p>
+                <p>
+                    see
+                    <span class="saved-items-link js-saved-items-link"
+                        >all save items</span
+                    >
+                </p>
+                <i
+                    class="fa-solid fa-xmark close-saved-overlay js-close-saved-overlay"
+                ></i>
+            </div>
+        </div>
+        <div id="remove-favorite-overlay">
+            <div class="remove-favorite-overlay-content">
+                <i class="fa-solid fa-minus"></i>
+                <p>remove to favorites!</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <footer>
+            <div class="container footer-container">
+                <div class="logo-footer">
+                    <div class="logo">
+                        <a href="./index.html">TraXXrecipe</a>
+                    </div>
+                    <div class="search-on-footer">
+                        <input
+                            type="text"
+                            placeholder="Input ingredients"
+                            class="footer-input-search-ingredients"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="social-media-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-tumblr"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="category-country-navigation">
+                    <div class="navigation-footer">
+                        <ul>
+                            <li id="home">
+                                <a href="./index.html" class="link">Home</a>
+                            </li>
+                            <li id="category">
+                                <a href="./category.html" class="link"
+                                    >Category</a
+                                >
+                            </li>
+                            <li id="country">
+                                <a href="./country.html" class="link"
+                                    >Cuisine</a
+                                >
+                            </li>
+                            <li id="about">
+                                <a href="./about.html" class="link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <ul
+                            class="category-footer-container js-category-footer-container"
+                        >
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="terms-and-service">
+            <div class="container">
+                <div class="terms-and-service-container">
+                    <p>
+                        All recipes is part of
+                        <a
+                            href="https://www.themealdb.com/api.php"
+                            target="_blank"
+                            >TheMealDB.com</a
+                        >
+                        API. <span>Terms and Services.</span>
+                    </p>
+                    <p>Coded by Teejay B. Villaluz</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

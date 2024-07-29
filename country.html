@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/utilities.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/country.css" />
+        <link rel="stylesheet" href="./style/footer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="./script/country.js" type="module" defer></script>
+        <title>Cuisine</title>
+    </head>
+    <body>
+        <header>
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li id="home">
+                            <a href="./index.html" class="link">Home</a>
+                        </li>
+                        <li id="category">
+                            <a href="./category.html" class="link">Category</a>
+                        </li>
+                        <li id="country">
+                            <a href="./country.html" class="link">Cuisine</a>
+                        </li>
+                        <li id="about">
+                            <a href="./about.html" class="link">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="list-icon">
+                        <a href="./favorite.html" class="favorite-icon">
+                            <i class="fa-regular fa-heart">
+                                <div
+                                    class="header-favorite-quantity js-header-favorite-quantity"
+                                ></div>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="country-hero-image">
+            <div class="container country-description">
+                <p>find recipe four your ingredients</p>
+                <div
+                    class="country-description-search-container js-country-description-search-container"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </section>
+        <div class="greek-cuisine-section">
+            <div class="container greek-cuisine-section-container">
+                <p>extra greek cuisine recipes</p>
+                <div class="greek-cuisine-description">
+                    One of the oldest known cuisine cultures is that of Greece.
+                    Olive oil, vegetables, fish, and different kinds of meat
+                    influence Greek and Greek island cuisine. For example, a
+                    straightforward Greek salad might only consist of crisp
+                    cucumbers, tomatoes, red onions, a touch of olive oil, a few
+                    delicious olives, and a thick slice of feta cheese. Greek
+                    cuisine is well-known for its seafood, including squid,
+                    mussels, fish, lobster, eggplant-based dishes such as
+                    moussaka, tzatziki (a sort of yoghurt dip), and gyros.
+                    Baklava, a delightful flaky pastry with layers of nuts and
+                    honey, is one of the most popular sweets in Greece.
+                </div>
+                <div
+                    class="greek-cuisine-meal-container js-greek-cuisine-meal-container"
+                ></div>
+            </div>
+        </div>
+        <div class="french-cuisine-section">
+            <div class="container french-cuisine-section-container">
+                <p>extra french cuisine recipes</p>
+                <div class="french-cuisine-description">
+                    Many people consider French food to be among the best in the
+                    world. French cuisine uses butter, cream, wine, herbs,
+                    chocolate, and vegetables. In addition, French pastries,
+                    cheese, bread, and wine are well-known worldwide.
+                </div>
+                <div
+                    class="french-cuisine-meal-container js-french-cuisine-meal-container"
+                ></div>
+            </div>
+        </div>
+        <div class="country-recipe-category">
+            <p>more extra cuisine</p>
+            <div class="container country-recipe-category-container">
+                <div
+                    class="country-recipe-blur-left js-country-recipe-blur-left"
+                ></div>
+                <i
+                    class="fa-solid fa-angle-left country-recipe-category-previous js-country-recipe-category-previous"
+                    id="left"
+                ></i>
+                <div
+                    class="country-recipe-category-card js-country-recipe-category-card"
+                ></div>
+                <i
+                    class="fa-solid fa-angle-right country-recipe-category-next js-country-recipe-category-next"
+                    id="right"
+                ></i>
+                <div
+                    class="country-recipe-blur-right js-country-recipe-blur-right"
+                ></div>
+            </div>
+        </div>
+        <div class="country-recipe-category-result">
+            <div class="container country-recipe-category-result-container">
+                <div
+                    class="country-recipe-category-result-title-container"
+                ></div>
+                <div
+                    class="country-recipe-category-result-content js-country-recipe-category-result-content"
+                ></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-angles-up details-btn-scroll-up-icon"></i>
+        <div id="search-overlay">
+            <div class="search-ingredients-container">
+                <div class="search-ingredients">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        placeholder="Search recipes for your ingredients"
+                        class="search-ingredients-input"
+                    />
+                </div>
+                <p>
+                    <span>Be specific in your search.</span> Example: pepper,
+                    vinegar, butter
+                </p>
+            </div>
+            <i class="fa-solid fa-xmark js-close-search-overlay"></i>
+        </div>
+        <div id="nav-overlay">
+            <div class="nav-overlay-list">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <ul>
+                    <li id="home">
+                        <a href="./index.html" class="link">Home</a>
+                    </li>
+                    <li id="category">
+                        <a href="./category.html" class="link">Category</a>
+                    </li>
+                    <li id="country">
+                        <a href="./country.html" class="link">Cuisine</a>
+                    </li>
+                    <li id="about">
+                        <a href="./about.html" class="link">About Us</a>
+                    </li>
+                </ul>
+                <button class="nav-overlay-search">search</button>
+                <div class="nav-overlay-social-media-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-tumblr"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-xmark close-nav-overlay js-close-nav-overlay"
+            ></i>
+        </div>
+        <div id="saved-overlay">
+            <div class="saved-overlay-content">
+                <i class="fa-solid fa-check check-saved-overlay"></i>
+                <p>saved!</p>
+                <p>
+                    see
+                    <span class="saved-items-link js-saved-items-link"
+                        >all save items</span
+                    >
+                </p>
+                <i
+                    class="fa-solid fa-xmark close-saved-overlay js-close-saved-overlay"
+                ></i>
+            </div>
+        </div>
+        <div id="remove-favorite-overlay">
+            <div class="remove-favorite-overlay-content">
+                <i class="fa-solid fa-minus"></i>
+                <p>remove to favorites!</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <footer>
+            <div class="container footer-container">
+                <div class="logo-footer">
+                    <div class="logo">
+                        <a href="./index.html">TraXXrecipe</a>
+                    </div>
+                    <div class="search-on-footer">
+                        <input
+                            type="text"
+                            placeholder="Input ingredients"
+                            class="footer-input-search-ingredients"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="social-media-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-tumblr"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="category-country-navigation">
+                    <div class="navigation-footer">
+                        <ul>
+                            <li id="home">
+                                <a href="./index.html" class="link">Home</a>
+                            </li>
+                            <li id="category">
+                                <a href="./category.html" class="link"
+                                    >Category</a
+                                >
+                            </li>
+                            <li id="country">
+                                <a href="./country.html" class="link"
+                                    >Cuisine</a
+                                >
+                            </li>
+                            <li id="about">
+                                <a href="./about.html" class="link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <ul
+                            class="category-footer-container js-category-footer-container"
+                        >
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="terms-and-service">
+            <div class="container">
+                <div class="terms-and-service-container">
+                    <p>
+                        All recipes is part of
+                        <a
+                            href="https://www.themealdb.com/api.php"
+                            target="_blank"
+                            >TheMealDB.com</a
+                        >
+                        API. <span>Terms and Services.</span>
+                    </p>
+                    <p>Coded by Teejay B. Villaluz</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

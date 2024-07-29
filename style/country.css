@@ -1,0 +1,590 @@
+section {
+    max-width: 1280px;
+    height: 400px;
+    background: url('../image/country-hero3-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(248, 251, 251);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.country-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-description p {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.country-description-search-container {
+    width: 500px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.country-description-search-container i {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.404);
+    padding: 1rem;
+}
+
+.country-description-search-container:hover i {
+    color: rgba(0, 0, 0, 0.855);
+}
+
+@media (max-width: 768px) {
+    .country-description p {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .country-description-search-container {
+        max-width: 450px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    section {
+        margin-bottom: 4rem;
+    }
+
+    .country-description p {
+        font-size: 1.8rem;
+        white-space: wrap;
+    }
+
+    .country-description-search-container {
+        max-width: 350px;
+        height: 2.8rem;
+    }
+
+    .country-description-search-container i {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .country-description-search-container {
+        max-width: 300px;
+    }
+}
+
+/* Greek Cuisine & French Cuisine */
+
+.greek-cuisine-section-container,
+.french-cuisine-section-container {
+    max-width: calc(920px + 4rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+}
+
+.french-cuisine-section-container {
+    padding-top: 4rem;
+}
+
+.greek-cuisine-section-container p,
+.french-cuisine-section-container p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.708);
+    font-weight: 500;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.greek-cuisine-description,
+.french-cuisine-description {
+    color: rgba(0, 0, 0, 0.855);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    padding-bottom: 4rem;
+    text-align: justify;
+}
+
+.greek-cuisine-meal,
+.french-cuisine-meal {
+    max-width: 920px;
+    height: 430px;
+    display: flex;
+    gap: 1rem;
+}
+
+.first-greek-cuisine-meal,
+.last-french-cuisine-meal {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.greek-cuisine-meal p,
+.french-cuisine-meal p {
+    font-size: 2rem;
+    padding: 0.5rem;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.first-greek-cuisine-meal p,
+.last-french-cuisine-meal p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.other-greek-cuisine-meal,
+.other-french-cuisine-meal {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.other-greek-cuisine-content,
+.other-french-cuisine-content {
+    height: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.first-greek-cuisine-meal::after,
+.other-greek-cuisine-content::after,
+.last-french-cuisine-meal::after,
+.other-french-cuisine-content::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.other-greek-cuisine-content p,
+.other-french-cuisine-content p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.greek-cuisine-meal img,
+.french-cuisine-meal img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 930px) {
+    .greek-cuisine-meal,
+    .french-cuisine-meal {
+        height: 350px;
+    }
+
+    .greek-cuisine-meal p,
+    .french-cuisine-meal p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .greek-cuisine-meal,
+    .french-cuisine-meal {
+        height: 340px;
+    }
+
+    .greek-cuisine-meal p,
+    .french-cuisine-meal p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .greek-cuisine-section-container,
+    .french-cuisine-section-container {
+        max-width: calc(765px - 4rem);
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+
+    .french-cuisine-section-container {
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .greek-cuisine-section-container,
+    .french-cuisine-section-container {
+        padding: 0 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .french-cuisine-section-container {
+        padding-top: 4rem;
+    }
+
+    .greek-cuisine-meal,
+    .french-cuisine-meal {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .first-greek-cuisine-meal,
+    .other-greek-cuisine-content,
+    .last-french-cuisine-meal,
+    .other-french-cuisine-content {
+        height: 290px;
+    }
+
+    .greek-cuisine-meal p,
+    .french-cuisine-meal p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .greek-cuisine-meal p,
+    .french-cuisine-meal p {
+        white-space: wrap;
+        text-align: center;
+    }
+}
+
+/* Country Category */
+
+.country-recipe-category {
+    padding: 4rem 0;
+}
+
+.country-recipe-category-container {
+    position: relative;
+    max-width: calc(920px + 4rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.country-recipe-category p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.708);
+    font-weight: 500;
+    max-width: calc(920px + 4rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-bottom: 2.5rem;
+    text-transform: capitalize;
+}
+
+.country-recipe-category-card {
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.country-recipe-category-card.dragging {
+    scroll-behavior: auto;
+    cursor: grab;
+}
+
+.country-recipe-category-card.dragging .country-recipe-name {
+    user-select: none;
+    pointer-events: none;
+}
+
+.country-recipe-name {
+    width: 125px;
+    height: 125px;
+    background-color: rgb(248, 251, 251);
+    border: 0.3rem solid rgba(58, 150, 145, 0.501);
+    border-radius: 50%;
+    filter: drop-shadow(0 10px 5px #00000025);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.country-recipe-name:hover {
+    border: 0.3rem solid rgba(58, 150, 145, 0.901);
+}
+
+.country-recipe-category-card .country-recipe-name.active {
+    display: none;
+}
+
+.country-recipe-name p {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.855);
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(169, 170, 170, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+    z-index: 1;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.country-recipe-blur-left {
+    width: 0.5rem;
+    height: 100%;
+    background-color: rgba(145, 147, 147, 0.868);
+    position: absolute;
+    left: 2.5rem;
+    filter: blur(12px);
+    opacity: 1;
+    z-index: 5;
+    display: none;
+}
+
+.country-recipe-blur-right {
+    width: 0.5rem;
+    height: 100%;
+    background-color: rgba(145, 147, 147, 0.868);
+    position: absolute;
+    top: 0;
+    right: 2.5rem;
+    filter: blur(12px);
+    opacity: 1;
+    z-index: 5;
+}
+
+.country-recipe-category-container i {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 13px 16px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.country-recipe-category .country-recipe-category-previous {
+    position: absolute;
+    left: 2rem;
+    top: 32%;
+    display: none;
+}
+
+.country-recipe-category .country-recipe-category-next {
+    position: absolute;
+    right: 2rem;
+    top: 32%;
+}
+
+@media (max-width: 768px) {
+    .country-recipe-category .country-recipe-category-previous,
+    .country-recipe-blur-left {
+        left: 2rem;
+    }
+
+    .country-recipe-category .country-recipe-category-next,
+    .country-recipe-blur-right {
+        right: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .country-recipe-category-container,
+    .country-recipe-category p {
+        padding: 0 1rem;
+    }
+
+    .country-recipe-category p {
+        padding-bottom: 2rem;
+    }
+
+    .country-recipe-name {
+        width: 90px;
+        height: 90px;
+        margin-right: 1.5rem;
+    }
+
+    .country-recipe-name p {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .country-recipe-category .country-recipe-category-previous,
+    .country-recipe-blur-left {
+        left: 1rem;
+    }
+
+    .country-recipe-category .country-recipe-category-next,
+    .country-recipe-blur-right {
+        right: 1rem;
+    }
+
+    .country-recipe-blur-left,
+    .country-recipe-blur-right {
+        width: 0.8rem;
+    }
+
+    .country-recipe-category-container i {
+        display: none;
+    }
+}
+
+/* Country Recipe Result */
+
+.country-recipe-category-result-title-container p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.708);
+    font-weight: 500;
+    max-width: calc(920px + 4rem);
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+
+.country-recipe-category-result-container {
+    padding: 4rem 0;
+}
+
+.country-recipe-category-result-content {
+    max-width: calc(920px + 4rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2rem;
+    column-gap: 1rem;
+    row-gap: 4rem;
+}
+
+.country-result-content-image-container {
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.country-result-content-image-container img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+
+.country-result-content-image-container:hover img {
+    transform: scale(1.06);
+}
+
+.country-result-content-details-container {
+    display: flex;
+}
+
+.country-result-content-details {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.country-result-content-details h4 {
+    color: rgba(0, 0, 0, 0.708);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.country-result-content:hover h4 {
+    color: rgba(58, 150, 145, 1);
+}
+
+.country-result-content-details h5 {
+    color: rgba(0, 0, 0, 0.571);
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.country-result-content-details-container i {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 12px 11px;
+    border-radius: 50%;
+    color: red;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .country-recipe-category-result-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .country-recipe-category-result-content {
+        padding: 0 1rem;
+    }
+
+    .country-recipe-category-result-title-container p {
+        padding: 0 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .country-result-content-image-container {
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .country-recipe-category-result-container {
+        padding: 4rem 0;
+    }
+
+    .country-recipe-category-result-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .country-result-content-image-container {
+        height: 218px;
+    }
+}

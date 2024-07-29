@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/utilities.css" />
+        <link rel="stylesheet" href="./style/header.css" />
+        <link rel="stylesheet" href="./style/about.css" />
+        <link rel="stylesheet" href="./style/footer.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <script src="./script/about.js" type="module" defer></script>
+        <title>About Us</title>
+    </head>
+    <body>
+        <header>
+            <div class="container nav-container">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li id="home">
+                            <a href="./index.html" class="link">Home</a>
+                        </li>
+                        <li id="category">
+                            <a href="./category.html" class="link">Category</a>
+                        </li>
+                        <li id="country">
+                            <a href="./country.html" class="link">Cuisine</a>
+                        </li>
+                        <li id="about">
+                            <a href="./about.html" class="link">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="list-icon">
+                        <a href="./favorite.html" class="favorite-icon">
+                            <i class="fa-regular fa-heart">
+                                <div
+                                    class="header-favorite-quantity js-header-favorite-quantity"
+                                ></div>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="about-image">
+            <div class="about-container"></div>
+        </section>
+        <div class="about-description">
+            <p>
+                Ingredients will have a number of functions in a recipe, such as
+                adding flavour, colour or texture, or performing a particular
+                purpose, e.g. as a thickener or setting agent. Ingredients may
+                also be selected for their nutritional composition or used for
+                traditional or cultural reasons.
+            </p>
+            <p>
+                Ingredients are the things that are used to make something,
+                especially all the different foods you use when you are cooking
+                a particular dish. Mix in the remaining ingredients. An
+                ingredient of a situation is one of the essential parts of it.
+                The ingredient list is the single best tool at your disposal to
+                determine if a food product is a good choice or not. In fact, it
+                is the only way to determine if the item is made of real food or
+                if it contains added sugars, vegetable oils, and additives.
+            </p>
+            <p>
+                In <span>TraXXrecipe</span> you can search recipes by
+                ingredients and save each recipes to your favorite. Enjoy a wide
+                range of recipes by categories and cuisines and cook it with
+                your available ingredients in your home.
+            </p>
+        </div>
+        <div id="search-overlay">
+            <div class="search-ingredients-container">
+                <div class="search-ingredients">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        placeholder="Search recipes for your ingredients"
+                        class="search-ingredients-input"
+                    />
+                </div>
+                <p>
+                    <span>Be specific in your search.</span> Example: pepper,
+                    vinegar, butter
+                </p>
+            </div>
+            <i class="fa-solid fa-xmark js-close-search-overlay"></i>
+        </div>
+        <div id="nav-overlay">
+            <div class="nav-overlay-list">
+                <div class="logo">
+                    <a href="./index.html">TraXXrecipe</a>
+                </div>
+                <ul>
+                    <li id="home">
+                        <a href="./index.html" class="link">Home</a>
+                    </li>
+                    <li id="category">
+                        <a href="./category.html" class="link">Category</a>
+                    </li>
+                    <li id="country">
+                        <a href="./country.html" class="link">Cuisine</a>
+                    </li>
+                    <li id="about">
+                        <a href="./about.html" class="link">About Us</a>
+                    </li>
+                </ul>
+                <button class="nav-overlay-search">search</button>
+                <div class="nav-overlay-social-media-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-tumblr"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <i
+                class="fa-solid fa-xmark close-nav-overlay js-close-nav-overlay"
+            ></i>
+        </div>
+        <div id="overlay"></div>
+        <footer>
+            <div class="container footer-container">
+                <div class="logo-footer">
+                    <div class="logo">
+                        <a href="./index.html">TraXXrecipe</a>
+                    </div>
+                    <div class="search-on-footer">
+                        <input
+                            type="text"
+                            placeholder="Input ingredients"
+                            class="footer-input-search-ingredients"
+                        />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="social-media-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-tumblr"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="category-country-navigation">
+                    <div class="navigation-footer">
+                        <ul>
+                            <li id="home">
+                                <a href="./index.html" class="link">Home</a>
+                            </li>
+                            <li id="category">
+                                <a href="./category.html" class="link"
+                                    >Category</a
+                                >
+                            </li>
+                            <li id="country">
+                                <a href="./country.html" class="link"
+                                    >Cuisine</a
+                                >
+                            </li>
+                            <li id="about">
+                                <a href="./about.html" class="link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="category-footer">
+                        <ul
+                            class="category-footer-container js-category-footer-container"
+                        >
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="terms-and-service">
+            <div class="container">
+                <div class="terms-and-service-container">
+                    <p>
+                        All recipes is part of
+                        <a
+                            href="https://www.themealdb.com/api.php"
+                            target="_blank"
+                            >TheMealDB.com</a
+                        >
+                        API. <span>Terms and Services.</span>
+                    </p>
+                    <p>Coded by Teejay B. Villaluz</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
