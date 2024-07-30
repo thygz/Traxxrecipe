@@ -301,7 +301,12 @@
 
 @media (max-width: 400px) {
     .details-btn-container {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+    .details-btn-read-more,
+    .details-btn-direction,
+    .details-btn-watch {
+        padding: 13px 14px;
     }
 }
 
