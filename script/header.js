@@ -155,6 +155,10 @@ export function hamburgerMenu() {
         removeSearchOverlay();
         removeNavOverlay();
     });
+    window.addEventListener('scroll', () => {
+        removeSearchOverlay();
+        removeNavOverlay();
+    });
 }
 
 export function searchInputOverlay() {
